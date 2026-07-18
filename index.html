@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nicolás Burger | Hamburguesas que Enamoran</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpeg" alt="Nicolás Burger">
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#menu">Menú</a></li>
+
+<li><a href="#preparacion">Preparación</a></li>
+
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+</nav>
+
+<a href="https://wa.me/573006104353" class="btn-header" target="_blank">
+Pedir Ahora
+</a>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-text">
+
+<h1>HAMBURGUESAS<br>QUE ENAMORAN</h1>
+
+<p>
+
+Cada hamburguesa es preparada al momento con ingredientes frescos,
+carne jugosa, pan suave y el sabor que rompe las reglas.
+
+</p>
+
+<a href="https://wa.me/573006104353" target="_blank" class="btn-hero">
+
+Pedir Ahora
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="principio.jpeg" alt="Hamburguesa">
+
+</div>
+
+</section>
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+<h2>Nuestro Menú</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="clasica_menu.jpeg">
+
+<h3>La Clásica</h3>
+
+<p>
+
+Pan artesanal, carne 100% res, queso cheddar,
+lechuga, tomate, cebolla crispy y salsa especial.
+
+</p>
+
+<a href="#"></a>
+<button class="ver-mas-btn" onclick="abrirModal('clasica.jpeg')">
+    Ver cómo se prepara 👨‍🍳
+</button>
+
+<div class="info-extra">
+
+    <img src="clasica.jpeg" alt="La Clásica" class="info-img">
+
+    
+    </ul>
+
+    <a href="https://wa.me/573006104353" target="_blank" class="btn-hero">
+        Pedir Ahora
+    </a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="la_bandida_menu.jpeg">
+
+<h3>La Bandida</h3>
+
+<p>
+
+Doble carne, doble queso,tomate, cebolla crispy, lechuga,
+tocineta crocante, aros de cebolla apanados y nuestra salsa de la casa.
+
+</p>
+
+<button class="ver-mas-btn" onclick="abrirModal('labandida.jpeg')">
+    Ver cómo se prepara 👨‍🍳
+</button>
+
+<div class="info-extra">
+
+    <img src="labandida.jpeg" alt="La Bandida" class="info-img">
+
+    
+    </ul>
+
+    <a href="https://wa.me/573006104353" target="_blank" class="btn-hero">
+        Pedir Ahora
+    </a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="chicken_menu.jpeg">
+
+<h3>Chicken</h3>
+
+<p>
+
+Pollo apanado extra crujiente,chorizo santarrosano,
+queso cheddar,cebolla crispy,tomate,
+lechuga fresca y salsa especial.
+
+</p>
+
+<a href="#"
+<button class="ver-mas-btn" onclick="abrirModal('chicken.jpeg')">
+    Ver cómo se prepara 👨‍🍳
+</button>
+
+<div class="info-extra">
+
+    <img src="chicken.jpeg" alt="Chicken" class="info-img">
+
+    
+    </ul>
+
+    <a href="https://wa.me/573006104353" target="_blank" class="btn-hero">
+        Pedir Ahora
+    </a>
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+
+<!-- COMBOS -->
+
+<section class="combos">
+
+<h2>Combos</h2>
+
+<img src="combos.jpeg">
+
+<p>
+
+Disfruta nuestras hamburguesas con papas y bebida
+para vivir la experiencia completa Nicolás Burger.
+
+</p>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contacto" id="contacto">
+
+<h2>¿Listo para probar la mejor hamburguesa?</h2>
+
+<a href="https://wa.me/573006104353" target="_blank" class="btn-contacto">
+
+Pedir Ahora
+
+</a>
+
+</section>
+
+<footer>
+
+<div>
+
+<h3>Nicolás Burger</h3>
+
+<p>Hamburguesas que Enamoran.</p>
+
+</div>
+
+<div>
+
+<p>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+300 610 4353
+
+</p>
+
+</div>
+
+</footer>
+
+<a href="https://wa.me/573006104353"
+
+class="whatsapp"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+<!-- MODAL -->
+<div id="modalImagen" class="modal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img class="modal-contenido" id="imagenModal">
+</div>
+
+<script>
+function abrirModal(imagen){
+    document.getElementById("modalImagen").style.display="flex";
+    document.getElementById("imagenModal").src=imagen;
+}
+
+function cerrarModal(){
+    document.getElementById("modalImagen").style.display="none";
+}
+
+window.onclick=function(event){
+    const modal=document.getElementById("modalImagen");
+    if(event.target==modal){
+        cerrarModal();
+    }
+}
+</script>
+</body>
+
+</html>
+
+
